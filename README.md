@@ -18,6 +18,6 @@ What is in this app?<br />
 
 
 
-[![Watch the video](https://github.com/NilayDev/FlutterTestTask/blob/main/assets/images/logo1.png)](https://github.com/NilayDev/FlutterTestTask/blob/main/assets/video/test%20video.mp4)
+[![Watch the video](https://github.com/NilayDev/FlutterTestTask/blob/main/assets/images/logo1.png)]([https://github.com/NilayDev/FlutterTestTask/blob/main/assets/video/test%20video.mp4](https://github.com/user-attachments/assets/75d5eb6b-c064-4250-8f78-c9396f59f345))
 
 
