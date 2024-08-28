@@ -63,7 +63,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   void _startNotificationTimer(int index) {
     notificationTimers[index]?.cancel(); // Cancel any existing timer
     notificationTimers[index] =
-        Timer.periodic(const Duration(seconds: 5), (timer) {
+        Timer.periodic(const Duration(seconds: 30), (timer) {
       showNotification();
     });
   }
@@ -277,26 +277,26 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   tileColor: BaseColors.baseColor,
                   leading: ClipOval(
                     child: CachedNetworkImage(
-                        imageUrl: upcomingData?[index].image ?? "",
-                        imageBuilder: (context, imageProvider) => Container(
-                              height: 60.0,
-                              width: 60.0,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                    image: imageProvider, fit: BoxFit.cover),
-                              ),
-                            ),
-                        placeholder: (context, url) =>
-                            const CircularProgressIndicator(),
-                        errorWidget: (context, url, error) => ClipOval(
-                          child: Image.network(
-                            getRandomImageUrl()!,
-                            width: 50.0, // Set the width of the circle
-                            height: 50.0, // Set the height of the circle
-                            fit: BoxFit.cover,
-                          ),
+                      imageUrl: upcomingData?[index].image ?? "",
+                      imageBuilder: (context, imageProvider) => Container(
+                        height: 60.0,
+                        width: 60.0,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          image: DecorationImage(
+                              image: imageProvider, fit: BoxFit.cover),
                         ),
+                      ),
+                      placeholder: (context, url) =>
+                          const CircularProgressIndicator(),
+                      errorWidget: (context, url, error) => ClipOval(
+                        child: Image.network(
+                          getRandomImageUrl()!,
+                          width: 50.0, // Set the width of the circle
+                          height: 50.0, // Set the height of the circle
+                          fit: BoxFit.cover,
+                        ),
+                      ),
                     ),
                   ),
                   title: Text('${upcomingData?[index].name}',
@@ -309,7 +309,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           style: TextStyles.subtitleText),
                       upcomingData?[index].spendAmount != null
                           ? Text(
-                              '${BaseStrings.spend} ${upcomingData?[index].spendAmount}, ${BaseStrings.save} ${upcomingData?[index].saveAmount}',
+                              '${BaseStrings.spend} \$${upcomingData?[index].spendAmount}, ${BaseStrings.save} \$${upcomingData?[index].saveAmount}',
                               style: TextStyles.subText)
                           : const Text(""),
                     ],

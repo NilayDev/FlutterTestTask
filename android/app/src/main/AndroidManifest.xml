@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
-        android:label="Uber Eat's"
+        android:label="Uber Eats"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
