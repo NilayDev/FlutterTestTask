@@ -14,15 +14,11 @@ What is in this app?<br />
 
 -Native Component Integration<br />
 
+-In-App Notification<br />
 
 https://github.com/user-attachments/assets/d15613c6-37b4-4dd6-a459-7fd7447e2738
 
 
--In-App Notification<br />
-
-
-
-[![Watch the video](https://github.com/NilayDev/FlutterTestTask/blob/main/assets/images/logo1.png)](https://github.com/NilayDev/FlutterTestTask/blob/main/assets/video/demo%20video.mp4)
 
 
 
