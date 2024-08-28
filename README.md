@@ -4,14 +4,15 @@
 
 This project is a starting point for a Flutter application.
 
-What is in this app?
--Splash Screen 
+What is in this app?<br />
 
--Login Screen
+-Splash Screen <br />
 
--List View Screen with Toggle Buttons
+-Login Screen <br />
 
--Native Component Integration
+-List View Screen with Toggle Buttons<br />
 
--In-App Notification
+-Native Component Integration<br />
+
+-In-App Notification<br />
 
